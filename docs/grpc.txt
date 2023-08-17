@@ -1,0 +1,7 @@
+The gRPC is found in the modules/location_kafka_producer.
+Usage : 
+1-make sure to install grpcio and grpc-tools
+2- run the server 1st then run the client using python3:
+cd modules/location_kafka_producer
+python3 locations_producer_server.py  ## Starts the grpc server 
+python3 locations_producer_client.py  ## Starts the client and creates a create locatiion procedure

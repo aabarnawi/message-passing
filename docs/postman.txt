@@ -1,0 +1,6 @@
+The was a postman.json requirement for added or modified endpoints,
+however nothing has been added. 
+
+Only the ports of the person and connections modules have been changed.
+
+and the get connection ednpoint the route is now in /connecitons instead of /persons.

@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "4c99fcc5-fb95-489f-9938-f5c23a2e9ddb",
+		"name": "Udacity Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29145438"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5001/api/connections/${personId}?start_date=2020-01-01&end_date=2020-12-30&distance=5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/connections/${personId}?start_date=2020-01-01&end_date=2020-12-30&distance=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"connections",
+						"${personId}"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2020-12-30"
+						},
+						{
+							"key": "distance",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

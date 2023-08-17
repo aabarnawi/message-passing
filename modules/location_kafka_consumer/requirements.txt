@@ -1,0 +1,5 @@
+kafka-python
+SQLAlchemy==1.3.19
+psycopg2-binary
+pyrsistent
+python-dateutil==2.8.1

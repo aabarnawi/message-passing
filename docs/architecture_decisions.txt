@@ -1,0 +1,7 @@
+The API has been seperated into connections API and Persons API. 
+Persons API : A microservice that routes on /persons which contains the get, getall and create operation
+Connections API : this was chosen to be a sperate module since it should have the luxury to scale verticaly and horizontaly, since its the most resource consumable module. Also , a slight modifciation was made to the route to run on the route /connections.
+Location grPC Server & Producer: this module depends on the location event generator, which in turn will use the stub Create to create the Lcoation event , which then will be produced by the gRPC producer/Server into the kafka cluster
+Location consumer: This module consume all the locations available in the locatoins topic, and saves it to the database.
+Location Event Generator: This is a client (found under the Location grPC Server & Producer module ) it is to be used by end users smartphones, smart watches ...etc to trigger the RPC.
+Front End: This will use the persons api and the connections api seemlessly.
